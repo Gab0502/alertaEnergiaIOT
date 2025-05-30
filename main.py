@@ -20,7 +20,7 @@ class VehicleInfo:
         self.collision_frame = 0
         self.stable_frames = 0 
 
-class EnhancedCentroidTracker:
+class CentroidTracker:
     def __init__(self, max_disappeared=50, history_length=10):
         self.nextObjectID = 0
         self.objects = OrderedDict()  
@@ -300,7 +300,7 @@ def capture_frames(video_path, frame_queue, stop_flag):
 def process_frames(input_queue, output_queue, stop_flag):
     net, classes, output_layers = load_yolo()
     vehicle_classes = ['car', 'motorbike', 'bus', 'truck']
-    tracker = EnhancedCentroidTracker(max_disappeared=30, history_length=10)
+    tracker = CentroidTracker(max_disappeared=30, history_length=10)
 
     while not stop_flag.is_set() or not input_queue.empty():
         try:
