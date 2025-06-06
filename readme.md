@@ -1,8 +1,8 @@
 ### Conforme conversado com Professor Raphael fui autorizado a usar o OpenCV no meu projeto ao invés do mediapipe.
 
-#Enricco Rossi de Souza Carvalho Miranda - RM551717
-#Gabriel Marquez Trevisan - RM99227
-#Samuel Ramos de Almeida - RM99134
+# Enricco Rossi de Souza Carvalho Miranda - RM551717
+# Gabriel Marquez Trevisan - RM99227
+# Samuel Ramos de Almeida - RM99134
 
 #  AlertaEnergia — Detecção de Colisões entre Veículos 
 
